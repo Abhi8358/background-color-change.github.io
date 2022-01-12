@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>background-color--change</title>
+        <style>
+            
+            #img{
+                width: 60%;
+                height: 40%;
+                margin-left: 20%;
+                margin-top: 2%;
+            }
+            #para{
+                width: 60%;
+                margin-left: 20%;
+            }
+            .color{
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                border-radius: 50%;
+                border: solid black 2px;
+                cursor: pointer;
+                
+            }
+            #c1{
+               
+               background-color:lightblue;
+            }
+            #c2{
+               
+               background-color:gray;
+            }
+            #c3{
+               
+               background-color:lawngreen;
+            }
+            #c4{
+               
+               background-color:yellow;  
+            }
+        </style>
+
+    </head>
+    <body class="bg">
+        <div style="text-align: right; margin-right: 20%;"> 
+        <span class="color" id="c1" onclick="bgchange('lightblue')"></span> 
+        <span class="color" id="c2" onclick="bgchange('gray')"></span>
+        <span class="color" id="c3" onclick="bgchange('lawngreen')"></span>
+        <span class="color" id="c4" onclick="bgchange('yellow')"></span>
+        <button style="background-color: darkgrey; " id="default" onclick="bgchange('white')"> Default</button>
+    </div>
+        <img id="img" src="https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg?fm=webp&q=72">
+        <p id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti harum ut tempore? Natus numquam est soluta nulla molestiae repellendus, non necessitatibus corporis autem, eveniet aperiam beatae voluptate fugiat illum modi?
+        Quisquam a accusantium numquam repellendus doloremque, minus doloribus ut molestiae! Aperiam repellendus adipisci minus, quibusdam ab sed voluptate voluptas assumenda suscipit fugit nisi eos nesciunt architecto voluptates iste veniam eum.
+        Sint inventore iure eum autem atque non! Est eum ad, labore laboriosam doloremque, minus pariatur veritatis autem odio consectetur accusantium nostrum tempore qui veniam repellat ex beatae ab tempora consequuntur.
+        Cupiditate voluptas excepturi dolor, sapiente nostrum ullam magnam dolore nulla laboriosam. Debitis nobis tempore, assumenda facilis tenetur dolore sequi eveniet iusto sint repellat minima quaerat expedita molestias dolores, quis repellendus.
+        Nulla iusto maxime fugiat distinctio voluptatibus rem vel. Suscipit, eius. Incidunt hic molestiae quos eveniet iusto cumque magni impedit reprehenderit ab sequi, consequatur cum magnam accusamus consequuntur illum dolor excepturi.
+        Voluptatibus sint sed ipsam aliquid accusamus officia cum. Reprehenderit beatae ipsum quidem doloribus, laudantium numquam et provident placeat, cupiditate saepe sapiente iusto odit maiores pariatur quia ad minus consectetur? Minima!
+        Minus maxime numquam officiis velit sequi magni fuga. Autem debitis eligendi placeat dolorem voluptatibus voluptatum mollitia molestias saepe? Possimus commodi numquam nulla cum facilis pariatur. Mollitia eos omnis maxime quibusdam.
+        Error autem voluptatem in libero ipsum consequuntur accusamus explicabo asperiores natus, nesciunt quae voluptates deleniti similique, repellat pariatur molestiae, voluptatum atque fugit excepturi tempore exercitationem vitae! Iusto quisquam asperiores sed!
+        Sit modi dolores delectus, quidem illo vero voluptate officiis tenetur quisquam assumenda necessitatibus illum! Voluptatibus sequi ducimus ipsa doloremque consequuntur velit recusandae sunt sed. Quidem voluptates fugiat eos fugit soluta.
+        Id voluptatum nostrum eveniet unde dolore dolorum blanditiis perspiciatis nihil totam. Non vel quos accusamus eveniet consequuntur perferendis magni corporis ipsa dolore, illum reiciendis magnam, et vero explicabo dolores repellendus.
+        Voluptatibus iure minima voluptatem laborum in error, aut nulla odit, dolor voluptatum corporis omnis beatae deleniti quae earum quas eveniet nihil non iste, ipsa unde! Amet aliquid unde vitae accusamus?
+        </p>
+        <script>
+            function bgchange(color){
+                document.body.style.backgroundColor=color;
+            }
+            function click(){
+                location.reload();
+            }
+            
+        </script>            
+    </body>
+</html>

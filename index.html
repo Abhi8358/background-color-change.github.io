@@ -51,7 +51,7 @@
         <span class="color" id="c2" onclick="bgchange('gray')"></span>
         <span class="color" id="c3" onclick="bgchange('lawngreen')"></span>
         <span class="color" id="c4" onclick="bgchange('yellow')"></span>
-        <button style="background-color: darkgrey; " id="default" onclick="bgchange('white')"> Default</button>
+        <button type="submit" style="background-color: darkgrey; " id="reload" onclick="reload()"> Default</button>
     </div>
         <img id="img" src="https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg?fm=webp&q=72">
         <p id="para">
@@ -72,8 +72,15 @@
                 document.body.style.backgroundColor=color;
             }
             function click(){
+                window.location.reload();
+            }
+            //let reloadtButton = document.getElementById("#reload");
+            // Reload everything:
+            function reload() {
                 location.reload();
             }
+            // Event listeners for reload
+            //reloadButton.addEventListener("click", reload, false);
             
         </script>            
     </body>
